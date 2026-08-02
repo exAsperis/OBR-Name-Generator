@@ -1,0 +1,29 @@
+# Fantasy Name Forge for Owlbear Rodeo
+
+A compact Owlbear Rodeo action extension for generating fantasy character names from customizable, browser-local lists.
+
+## Features
+
+- Generates complete names or combines prefixes, stems, and suffixes.
+- Optionally adds epithets and titles.
+- Saves edited lists and recent names in `localStorage`.
+- Imports and exports list collections as JSON.
+- Runs as a dependency-free static site.
+
+## Install in Owlbear Rodeo
+
+Add this extension manifest URL in Owlbear Rodeo:
+
+`https://exasperis.github.io/OBR-Name-Generator/manifest.json`
+
+## Local development
+
+Serve this directory with any static file server, then add the local `manifest.json` URL as a development extension. Run the generator tests with:
+
+```sh
+npm test
+```
+
+## Hosting
+
+The project is designed for GitHub Pages. Publish the repository root from the `main` branch; all manifest paths are relative so they work under the project Pages path.

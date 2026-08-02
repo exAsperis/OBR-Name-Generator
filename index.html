@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Fantasy Name Forge</title>
+    <link rel="icon" href="icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <div class="brand"><img src="icon.svg" alt="" /><div><p class="eyebrow">Fantasy Name Forge</p><h1>Call forth a name.</h1></div></div>
+        <p class="intro">Mix syllables, complete names, and titles from a collection that stays in this browser.</p>
+      </header>
+
+      <nav class="tabs" aria-label="Sections">
+        <button class="tab active" data-panel="forge" aria-selected="true">Forge</button>
+        <button class="tab" data-panel="parts" aria-selected="false">Name parts</button>
+      </nav>
+
+      <section id="forge" class="panel active">
+        <label for="style">Naming style</label>
+        <select id="style">
+          <option value="mixed">Surprise me</option>
+          <option value="assembled">Assembled</option>
+          <option value="given">Complete names</option>
+        </select>
+        <label class="check"><input id="with-title" type="checkbox" /> Add an epithet when available</label>
+        <div id="result" class="result" aria-live="polite">The forge is waiting.</div>
+        <div class="actions">
+          <button id="generate" class="primary">Generate name</button>
+          <button id="copy" class="secondary" disabled>Copy</button>
+        </div>
+        <div id="history-wrap" hidden>
+          <div class="section-title"><h2>Recent names</h2><button id="clear-history" class="text-button">Clear</button></div>
+          <ul id="history" class="history"></ul>
+        </div>
+      </section>
+
+      <section id="parts" class="panel">
+        <p class="hint">One entry per line. Changes save automatically to local storage.</p>
+        <div id="editors"></div>
+        <div class="actions stack-mobile">
+          <button id="export" class="secondary">Export lists</button>
+          <label class="button-label secondary" for="import-file">Import lists</label>
+          <input id="import-file" type="file" accept="application/json,.json" hidden />
+          <button id="reset" class="danger">Reset defaults</button>
+        </div>
+        <p id="status" class="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
