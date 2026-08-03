@@ -1,4 +1,13 @@
 import { DEFAULT_PARTS, cleanParts, generateName } from "./generator.js";
+import OBR from "@owlbear-rodeo/sdk";
+
+// Loading the SDK establishes Owlbear Rodeo's iframe handshake. Without this
+// the action remains on OBR's loading screen even though the page works alone.
+if (OBR.isAvailable) {
+  OBR.onReady(() => {
+    document.documentElement.dataset.obrReady = "true";
+  });
+}
 
 const STORAGE_KEY = "fantasy-name-forge.parts.v1";
 const HISTORY_KEY = "fantasy-name-forge.history.v1";

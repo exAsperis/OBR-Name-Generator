@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Fantasy Name Forge</title>
+    <link rel="icon" href="./assets/icon-DPmOJNpk.svg" />
+    <script type="module" crossorigin src="./assets/index-rdE3o1WW.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D8dY__8a.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <div class="brand"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20role='img'%20aria-label='Fantasy%20Name%20Forge'%3e%3cdefs%3e%3clinearGradient%20id='g'%20x1='3'%20y1='2'%20x2='21'%20y2='22'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23ffd78a'/%3e%3cstop%20offset='1'%20stop-color='%23d887ff'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath%20fill='url(%23g)'%20d='M12%201.8%2014.3%208l6.2-2.3-3.1%205.8%205.4%203.8-6.6.5.5%206.6-4.7-4.7-4.7%204.7.5-6.6-6.6-.5%205.4-3.8-3.1-5.8L9.7%208%2012%201.8Z'/%3e%3ccircle%20cx='12'%20cy='12'%20r='2.6'%20fill='%2322172b'/%3e%3c/svg%3e" alt="" /><div><p class="eyebrow">Fantasy Name Forge</p><h1>Call forth a name.</h1></div></div>
+        <p class="intro">Mix syllables, complete names, and titles from a collection that stays in this browser.</p>
+      </header>
+
+      <nav class="tabs" aria-label="Sections">
+        <button class="tab active" data-panel="forge" aria-selected="true">Forge</button>
+        <button class="tab" data-panel="parts" aria-selected="false">Name parts</button>
+      </nav>
+
+      <section id="forge" class="panel active">
+        <label for="style">Naming style</label>
+        <select id="style">
+          <option value="mixed">Surprise me</option>
+          <option value="assembled">Assembled</option>
+          <option value="given">Complete names</option>
+        </select>
+        <label class="check"><input id="with-title" type="checkbox" /> Add an epithet when available</label>
+        <div id="result" class="result" aria-live="polite">The forge is waiting.</div>
+        <div class="actions">
+          <button id="generate" class="primary">Generate name</button>
+          <button id="copy" class="secondary" disabled>Copy</button>
+        </div>
+        <div id="history-wrap" hidden>
+          <div class="section-title"><h2>Recent names</h2><button id="clear-history" class="text-button">Clear</button></div>
+          <ul id="history" class="history"></ul>
+        </div>
+      </section>
+
+      <section id="parts" class="panel">
+        <p class="hint">One entry per line. Changes save automatically to local storage.</p>
+        <div id="editors"></div>
+        <div class="actions stack-mobile">
+          <button id="export" class="secondary">Export lists</button>
+          <label class="button-label secondary" for="import-file">Import lists</label>
+          <input id="import-file" type="file" accept="application/json,.json" hidden />
+          <button id="reset" class="danger">Reset defaults</button>
+        </div>
+        <p id="status" class="status" aria-live="polite"></p>
+      </section>
+    </main>
+  </body>
+</html>

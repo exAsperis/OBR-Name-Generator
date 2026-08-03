@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Fantasy Name Forge">
+  <defs><linearGradient id="g" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#ffd78a"/><stop offset="1" stop-color="#d887ff"/></linearGradient></defs>
+  <path fill="url(#g)" d="M12 1.8 14.3 8l6.2-2.3-3.1 5.8 5.4 3.8-6.6.5.5 6.6-4.7-4.7-4.7 4.7.5-6.6-6.6-.5 5.4-3.8-3.1-5.8L9.7 8 12 1.8Z"/>
+  <circle cx="12" cy="12" r="2.6" fill="#22172b"/>
+</svg>
