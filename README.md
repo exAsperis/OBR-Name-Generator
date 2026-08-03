@@ -16,6 +16,10 @@ Add this extension manifest URL in Owlbear Rodeo:
 
 `https://exasperis.github.io/OBR-Name-Generator/manifest.json`
 
+If Owlbear Rodeo has cached an older manifest for that URL, use the versioned endpoint:
+
+`https://exasperis.github.io/OBR-Name-Generator/manifest-v1.0.2.json`
+
 ## Local development
 
 Install dependencies, build the published `docs/` directory, and run the tests with:

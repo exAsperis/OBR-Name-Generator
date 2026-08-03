@@ -1,0 +1,22 @@
+{
+  "name": "Fantasy Name Forge",
+  "version": "1.0.2",
+  "manifest_version": 1,
+  "description": "Generate fantasy character names from your own reusable name-part lists.",
+  "icon": "https://exasperis.github.io/OBR-Name-Generator/icon.svg",
+  "author": "exAsperis",
+  "homepage_url": "https://github.com/exAsperis/OBR-Name-Generator",
+  "action": {
+    "title": "Fantasy Name Forge",
+    "icon": "https://exasperis.github.io/OBR-Name-Generator/icon.svg",
+    "popover": "https://exasperis.github.io/OBR-Name-Generator/index.html",
+    "height": 640,
+    "width": 420
+  },
+  "permissions": [
+    {
+      "name": "clipboard-write",
+      "reason": "Copy generated names to the clipboard."
+    }
+  ]
+}
