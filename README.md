@@ -28,4 +28,4 @@ pnpm test
 
 ## Hosting
 
-The project is designed for GitHub Pages. Publish the `/docs` directory from the `main` branch; all manifest paths are relative so they work under the project Pages path.
+The project is designed for GitHub Pages. Publish the `/docs` directory from the `main` branch. Manifest asset and popover paths use fully qualified URLs because Owlbear Rodeo does not resolve bare relative paths against a project Pages directory.

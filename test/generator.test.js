@@ -26,6 +26,6 @@ test("explains when the lists cannot produce a name", () => {
 test("ships a valid Owlbear Rodeo manifest", async () => {
   const manifest = JSON.parse(await readFile(new URL("../manifest.json", import.meta.url), "utf8"));
   assert.equal(manifest.manifest_version, 1);
-  assert.equal(manifest.version, "1.0.1");
-  assert.equal(manifest.action.popover, "index.html");
+  assert.equal(manifest.version, "1.0.2");
+  assert.equal(manifest.action.popover, "https://exasperis.github.io/OBR-Name-Generator/index.html");
 });
